@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- box icon link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- {{-- cdn font awesome --}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="image/logo.png">
+    <!-- ink-css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <a href="#" class="scrollTopBtn" title="Remonter en haut"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <!-- fin avis  -->
+
+    <header>
+        <button id="themeToggle">Changer de mode</button> 
+    </header>
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 style="display: flex">
+                    S<div class="typewriter" id="typewriter"></div>
+                </h1>
+                <p>Développeur Fullstack passionné par Laravel,
+                    Spring Boot, React js, Flutter.<br>
+                    J’aime concevoir des applications/logiciel modernes,
+                    sécurisés et performants.</p>
+                <div class="btn">
+                    <a href="https://github.com/Maxhgf8-5" target="_blank" class="github-link"> <svg
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg> <span>Voir mes projets</span> </a>
+                    <a href="https://www.linkedin.com/in/magnou%C3%A9wa-gnansa-906657300" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.447 20.452H17.22v-5.3c0-1.265-.025-2.893-1.763-2.893c-1.766 0-2.037 1.378-2.037 2.8v5.393H10.19V9h3.104v1.561h.043c.432-.817 1.49-1.68 3.064-1.68c3.276 0 3.878 2.157 3.878 4.964v6.607zM7.34 7.433a1.804 1.804 0 1 1 0-3.608a1.804 1.804 0 0 1 0 3.608zM8.96 20.452H5.72V9H8.96v11.452zM22.225 0H1.771C.792 0 0 .77 0 1.722v20.555C0 23.23.792 24 1.771 24h20.451C23.2 24 24 23.23 24 22.277V1.722C24 .77 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <span>Profil LinkedIn</span></a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="image/m2gtech.jpeg" alt="Photo de M2GTech" />
+            </div>
+        </div>
+    </section>
+    <!-- section a propos de moi  -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2> À propos de moi</h2>
+                <p>
+                    Je suis <strong>Max</strong>, développeur fullstack passionné qui aime donner vie à des idées
+                    ambitieuses à travers du code moderne et performant.
+                    J’ai une solide expérience en <span class="tech">PHP</span>, <span class="tech">Java</span>,
+                    <span class="tech">Java Script</span>,
+                    que j’utilise pour créer des applications web puissantes, évolutives et sécurisées.
+                </p>
+                <p>
+                    J’accorde une grande importance à l’<strong>expérience utilisateur</strong>, au <strong>design
+                        responsive</strong>, et à une <strong>architecture backend propre</strong>.
+                    Mon workflow est agile, orienté qualité, avec Git, CI/CD et bonnes pratiques DevOps.
+                </p>
+                <a href="#contact" class="about-btn"> Me contacter</a>
+            </div>
+            <div class="about-illustration">
+                <img src="image/entreprise-informatique-scaled.jpeg" alt="Illustration développeur" />
+            </div>
+        </div>
+    </section>
+    <!-- section mes realisation  -->
+    <section id="projects" class="projects-section">
+        <h2> Projets récents</h2>
+
+        <div class="projects-grid">
+
+            <!-- premier projet  -->
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3><i class="fa-solid fa-check"></i>Application de gestion d'employés</h3>
+                    <p><i class="fa-solid fa-check"></i>Laravel+React </p>
+                    <button class="toggleProjectBtn project-link">Voir le projet</button>
+                </div>
+
+                <div class="project-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-controls">
+                            <span class="chevron left"><i class="fa-solid fa-arrow-left"
+                                    style="color: white"></i></span>
+                            <span class="chevron right"><i class="fa-solid fa-arrow-right"
+                                    style="color: white"></i></span>
+                        </div>
+                        <div class="carousel-out">
+                            <span class="out">X</span>
+                        </div>
+                        <img class="carousel-image" src="" alt="Capture projet" />
+                    </div>
+                    <a href="#" class="project-link">🔗 Démo / GitHub</a>
+                </div>
+            </div>
+
+            <!-- deuxieme projet  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3><i class="fa-solid fa-check"></i>Site E-commerce </h3>
+                    <p><i class="fa-solid fa-check"></i>WordPress</p>
+                    <button class="toggleProjectBtn project-link">Voir le projet</button>
+                </div>
+
+                <div class="project-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-controls">
+                            <span class="chevron left"><i class="fa-solid fa-arrow-left"
+                                    style="color: white"></i></span>
+                            <span class="chevron right"><i class="fa-solid fa-arrow-right"
+                                    style="color: white"></i></span>
+                        </div>
+                        <div class="carousel-out">
+                            <span class="out">X</span>
+                        </div>
+                        <img class="carousel-image" src="" alt="Capture projet" />
+                    </div>
+                    <a href="#" class="project-link">🔗 Démo / GitHub</a>
+                </div>
+            </div>
+            <!-- troisieme projet  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Application de gestion de scolarité</h3>
+                    <p><i class="fa-solid fa-check"></i>Laravel</p>
+                    <button class="toggleProjectBtn project-link">Voir le projet</button>
+                </div>
+
+                <div class="project-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-controls">
+                            <span class="chevron left"><i class="fa-solid fa-arrow-left"
+                                    style="color: white"></i></span>
+                            <span class="chevron right"><i class="fa-solid fa-arrow-right"
+                                    style="color: white"></i></span>
+                        </div>
+                        <div class="carousel-out">
+                            <span class="out">X</span>
+                        </div>
+                        <img class="carousel-image" src=""alt="Capture 1" />
+                    </div>
+                    <a href="#" class="project-link">🔗 Démo / GitHub</a>
+                </div>
+            </div>
+            <!-- quatrieme projet  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3><i class="fa-solid fa-check"></i>Application de gestion de Pharmacie</h3>
+                    <p><i class="fa-solid fa-check"></i>Spring Boot+React</p>
+                    <button class="toggleProjectBtn project-link">Voir le projet</button>
+                </div>
+
+                <div class="project-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-controls">
+                            <span class="chevron left"><i class="fa-solid fa-arrow-left"
+                                    style="color: white"></i></span>
+                            <span class="chevron right"><i class="fa-solid fa-arrow-right"
+                                    style="color: white"></i></span>
+                        </div>
+                        <div class="carousel-out">
+                            <span class="out">X</span>
+                        </div>
+                        <img class="carousel-image" src="" alt="Capture projet" />
+                    </div>
+                    <a href="#" class="project-link">🔗 Démo / GitHub</a>
+                </div>
+            </div>
+            <!-- quatrieme projet  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3><i class="fa-solid fa-check"></i>Application de gestion de Restaurant</h3>
+                    <p><i class="fa-solid fa-check"></i>PHP</p>
+                    <button class="toggleProjectBtn project-link">Voir le projet</button>
+                </div>
+
+                <div class="project-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-controls">
+                            <span class="chevron left"><i class="fa-solid fa-arrow-left"
+                                    style="color: white"></i></span>
+                            <span class="chevron right"><i class="fa-solid fa-arrow-right"
+                                    style="color: white"></i></span>
+                        </div>
+                        <div class="carousel-out">
+                            <span class="out">X</span>
+                        </div>
+                        <img class="carousel-image" src="" alt="Capture projet" />
+                    </div>
+                    <a href="#" class="project-link">🔗 Démo / GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section stack trechnique -->
+    <section id="stack" class="stack-section">
+        <h2>Mon Stack Technique</h2>
+
+        <div class="stack-grid">
+            <div class="stack-category">
+                <h3>Langages</h3>
+                <ul>
+                    <li class="tech-item">
+                        <span class="tech-name">Java <i class='bx bxl-java'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐☆ — 85%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">PHP <i class='bx bxl-php'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐— 95%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Java Script <i class='bx bxl-javascript'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐☆ — 80%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">R <i class="fa-solid fa-r"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐☆☆ — 60%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Dart <i class="fa-brands fa-dart-lang"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐☆☆ — 80%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Python <i class="fa-brands fa-python"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐☆☆ — 80%</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="stack-category">
+                <h3>Frameworks & Librairies </h3>
+                <ul>
+                    <li class="tech-item">
+                        <span class="tech-name">Laravel <i class="fa-brands fa-laravel"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 95%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Spring Boot <i class='bx bxl-spring-boot'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 95%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Flutter <i class="fa-brands fa-flutter"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 65%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">React <i class="fa-brands fa-react"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 75%</div>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="stack-category">
+                <h3>Outils & DevOps</h3>
+                <ul>
+                    <li class="tech-item">
+                        <span class="tech-name">Git & GitHub <i class='bx bxl-git'></i> & <i
+                                class='bx bxl-github'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 90%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Postman</span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐⭐ — 95%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Docker <i class='bx bxl-docker'></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐☆ — 75%</div>
+                    </li>
+                    <li class="tech-item">
+                        <span class="tech-name">Notion<i class="fa-brands fa-notion"></i></span>
+                        <span class="chevron-icon">▶</span>
+                        <div class="tech-level">Niveau : ⭐⭐⭐⭐☆ — 90%</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- {{-- <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="magnouéwa-gnansa-906657300" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bf.linkedin.com/in/magnou%C3%A9wa-gnansa-906657300?trk=profile-badge">Magnouéwa Gnansa</a></div> --}} -->
+
+    <!--  Expérience / Éducation -->
+    <section id="experience" class="experience-section">
+
+        <h2>Certifications</h2>
+        <div class="cert-list">
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Structure de données et algorithmes</div>
+                    <div class="cert-org">Amazon · juil. 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/GQWKA1BLK309" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Introduction to Software Development</div>
+                    <div class="cert-org">Amazon · juil. 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/0Y8QKF8XEGY5" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Programming with Java</div>
+                    <div class="cert-org">Amazon · Mai. 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/verify/GDYKVJ01I6II" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Introduction à HTML, CSS et JavaScript</div>
+                    <div class="cert-org">IBM · Mars 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/BPU73RO37RBR" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en Utilisation de la base de données MySQL avec PHP</div>
+                    <div class="cert-org">Coursera · Mars 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/VA271E3SQMJH" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Bases de données et SQL pour la science des données avec Python</div>
+                    <div class="cert-org">IBM · Janv 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/LSJ728CAGLJY" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en Poser des Questions pour Prendre des Décisions Fondées sur
+                        des Données</div>
+                    <div class="cert-org">Google · Janv 2025</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/ZA8CBZVL6E89" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Foundations: Data, Data, Everywhere</div>
+                    <div class="cert-org">Google · Dec 2024</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/NC37Q330HWE2" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en Introduction to Project Management</div>
+                    <div class="cert-org">IBM · Dec 2024</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/N0RE2QM00E59" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-info">
+                    <div class="cert-title">Certification en
+                        Project Management: Creating the WBS</div>
+                    <div class="cert-org">IBM · Dec 2024</div>
+                </div> <a href="https://www.coursera.org/account/accomplishments/records/E1NTXEFHQAS7" target="_blank"
+                    class="verify-btn">Vérifier</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- section du nombre de projet -->
+    <!-- 📊 Section Statistiques & Impact -->
+    <section class="stats-impact" id="stats">
+        <h2> Statistiques & Impact</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><span class="count" data-target="20">0</span>+</h3>
+                <p>Projets réalisés</p>
+            </div>
+            <div class="stat-card">
+                <h3><span class="count" data-target="500">0</span>+</h3>
+                <p>Utilisateurs touchés</p>
+            </div>
+            <div class="stat-card">
+                <h3><span class="count" data-target="8">0</span></h3>
+                <p>Technologies maîtrisées</p>
+            </div>
+        </div>
+    </section>
+    <section class="quiz-section" id="quiz">
+        <h2> Dev Quiz</h2>
+        <div class="quiz-container">
+            <p id="question">Question ici</p>
+            <ul id="choices">
+                <li onclick="checkAnswer(this)">Option 1</li>
+                <li onclick="checkAnswer(this)">Option 2</li>
+                <li onclick="checkAnswer(this)">Option 3</li>
+            </ul>
+            <p id="result"></p>
+            <button onclick="loadQuestion()" style="border: none;cursor: pointer;" class="project-link">Question
+                suivante</button>
+        </div>
+    </section>
+    <!-- footer  -->
+    <!-- 🌌 Footer stylé -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- <p>Code moderne, design réactif, passion sans limite.</p> -->
+            <ul class="social-links">
+                <li><a href="mailto:gnansamaxime1@gmail.com" title="Email" target="_blank"><i
+                            class="fas fa-envelope"></i></a></li>
+                <li><a href="https://wa.me/0022665633268" title="WhatsApp" target="_blank"><i
+                            class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/magnou%C3%A9wa-gnansa-906657300" title="LinkedIn"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/Maxhgf8-5" title="GitHub" target="_blank"><i
+                            class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Max | Tout droit reservé </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-9zV7m8g3970D8d+5wK3jJ14F2qDkQVZi7hH8W6Xe9lYjOcF0pPfGv1sJ4r3qQvKzR2dL5gBkDdEjH8yBwCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body>
+
+</html>
