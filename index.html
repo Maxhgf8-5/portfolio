@@ -14,6 +14,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- {{-- cdn font awesome --}} -->
     <link
       rel="stylesheet"
@@ -41,7 +42,11 @@
       <nav class="nav" aria-label="Navigation">
         <div class="brand" aria-label="Identité du site">
           <!-- <span class="brand-badge" aria-hidden="true"></span> -->
-          <img src="image/max.png" class="brand-badge" alt="Logo de Magnouréwa">
+          <img
+            src="image/max.png"
+            class="brand-badge"
+            alt="Logo de Magnouréwa"
+          />
           <span>Magnouréwa | Fullstack</span>
         </div>
         <div class="nav-links sidebar" id="sidebar">
@@ -58,7 +63,7 @@
 
     <!-- Home / Hero -->
     <main id="home" class="hero">
-      <section class="hero-card" aria-label="Présentation">
+      <section class="hero-card" aria-label="Présentation" data-aos="fade-right">
         <h1 style="display: flex">
           S
           <div class="typewriter" id="typewriter"></div>
@@ -115,7 +120,7 @@
           >
         </div>
       </section>
-      <aside class="hero-visual" aria-label="Stats et visuels">
+      <aside class="hero-visual" aria-label="Stats et visuels" data-aos="fade-left">
         <img
           src="image/gnansa.jpeg"
           alt="Interface moderne et code"
@@ -139,7 +144,7 @@
     </main>
 
     <!-- À propos -->
-    <section id="about" class="section">
+    <section id="about" class="section" data-aos="zoom-in">
       <div class="section-header">
         <h2 class="section-title">Mon Stack Technique</h2>
         <p class="section-sub">
@@ -179,7 +184,7 @@
     </section>
 
     <!-- Projets -->
-    <section id="projects" class="section">
+    <section id="projects" class="section" data-aos="zoom-in">
       <div class="section-header">
         <h2 class="section-title">Aperçu de mes projets</h2>
         <p class="section-sub">
@@ -237,8 +242,7 @@
                 <path fill="#FF0000" d="M10 9.5v5l5-2.5-5-2.5Z" />
               </svg>
               <span>Démo / Youtube</span>
-             </a
-            >
+            </a>
           </div>
         </article>
 
@@ -267,7 +271,8 @@
               </div>
               <img class="carousel-image" src="" alt="Capture projet" />
             </div>
-            <a href="#" class="project-link btn btn-ghost"><svg
+            <a href="#" class="project-link btn btn-ghost"
+              ><svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -286,10 +291,12 @@
                   stroke-width="2"
                 />
                 <path fill="#FF0000" d="M10 9.5v5l5-2.5-5-2.5Z" />
-              </svg> Démo / Youtube</a>
+              </svg>
+              Démo / Youtube</a
+            >
           </div>
         </article>
-        
+
         <article class="card project-card">
           <div class="project-info">
             <span class="badge">Laravel+tailwincss</span>
@@ -319,7 +326,10 @@
               </div>
               <img class="carousel-image" src="" alt="Capture projet" />
             </div>
-            <a href="https://youtu.be/qgrzMigdlJU" class="project-link btn btn-ghost"><svg
+            <a
+              href="https://youtu.be/qgrzMigdlJU"
+              class="project-link btn btn-ghost"
+              ><svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -338,7 +348,9 @@
                   stroke-width="2"
                 />
                 <path fill="#FF0000" d="M10 9.5v5l5-2.5-5-2.5Z" />
-              </svg> Démo / Youtube</a>
+              </svg>
+              Démo / Youtube</a
+            >
           </div>
         </article>
         <article class="card project-card">
@@ -365,7 +377,8 @@
               </div>
               <img class="carousel-image" src="" alt="Capture projet" />
             </div>
-            <a href="#" class="project-link btn btn-ghost"><svg
+            <a href="#" class="project-link btn btn-ghost"
+              ><svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -384,7 +397,9 @@
                   stroke-width="2"
                 />
                 <path fill="#FF0000" d="M10 9.5v5l5-2.5-5-2.5Z" />
-              </svg> Démo / Youtube</a>
+              </svg>
+              Démo / Youtube</a
+            >
           </div>
         </article>
       </div>
@@ -400,7 +415,7 @@
       </div>
 
       <div class="cert-list">
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/amazon.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -416,7 +431,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/amazon.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -432,7 +447,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/amazon.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">Certification en Programming with Java</div>
@@ -446,7 +461,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/ibm.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">HTML, CSS et JavaScript</div>
@@ -460,7 +475,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/coursera.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -476,7 +491,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/ibm.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -493,7 +508,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/google.png" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -510,7 +525,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/google.png" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -526,7 +541,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/ibm.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -542,7 +557,7 @@
           >
         </div>
 
-        <div class="cert">
+        <div class="cert" data-aos="zoom-in">
           <img src="image/ibm.webp" class="logo" alt="" />
           <div class="meta">
             <div class="title">
@@ -562,7 +577,7 @@
 
     <!-- Services -->
     <section id="services" class="section">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-left">
         <h2 class="section-title">Services</h2>
         <p class="section-sub">
           Ce que je peux livrer, avec exigence et clarté.
@@ -570,7 +585,7 @@
       </div>
 
       <div class="services">
-        <div class="svc">
+        <div class="svc" data-aos="fade-up">
           <span class="badge">Tech</span>
           <h4>Développement & Intégration</h4>
           <ul>
@@ -588,7 +603,7 @@
             </li>
           </ul>
         </div>
-        <div class="svc">
+        <div class="svc" data-aos="fade-up">
           <span class="badge">Gestion</span>
           <h4>Gestion & Analyse</h4>
           <ul>
@@ -601,7 +616,7 @@
             </li>
           </ul>
         </div>
-        <div class="svc">
+        <div class="svc" data-aos="fade-up">
           <span class="badge">Autres</span>
           <h4>Conseil & Formation</h4>
           <ul>
@@ -621,13 +636,13 @@
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-right">
         <h2 class="section-title">Contact</h2>
         <p class="section-sub">Un projet en tête ? Parlons-en.</p>
       </div>
 
       <div class="grid">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <h3>Discutons</h3>
           <p>
             Je réponds rapidement avec des pistes concrètes et priorisées selon
@@ -678,7 +693,7 @@
             Lien copié dans le presse‑papiers ✔
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <h3>Réseaux</h3>
           <p>
             Retrouvez‑moi sur LinkedIn et GitHub pour suivre mes dernières
@@ -748,7 +763,10 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       // Smooth scroll + active link
       document.querySelectorAll(".nav-links a").forEach((link) => {
