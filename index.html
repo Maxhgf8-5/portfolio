@@ -14,6 +14,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- link librairie aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- {{-- cdn font awesome --}} -->
     <link
@@ -62,8 +63,8 @@
     </header>
 
     <!-- Home / Hero -->
-    <main id="home" class="hero"  data-aos="fade-right">
-      <section class="hero-card" aria-label="Présentation" >
+    <main id="home" class="hero"  >
+      <section class="hero-card" aria-label="Présentation" data-aos="fade-left">
         <h1 style="display: flex">
           S
           <div class="typewriter" id="typewriter"></div>
@@ -120,7 +121,7 @@
           >
         </div>
       </section>
-      <aside class="hero-visual" aria-label="Stats et visuels" >
+      <aside class="hero-visual" aria-label="Stats et visuels" data-aos="fade-right">
         <img
           src="image/gnansa.jpeg"
           alt="Interface moderne et code"
@@ -128,11 +129,11 @@
         />
         <div class="stats">
           <div class="stat">
-            <div class="v"><span class="count" data-target="20">0</span>+</div>
+            <div class="v"><span class="count" data-target="15">0</span>+</div>
             <div class="k">Projets realisés</div>
           </div>
           <div class="stat">
-            <div class="v"><span class="count" data-target="20">0</span>+</div>
+            <div class="v"><span class="count" data-target="200">0</span>+</div>
             <div class="k">Utilisateurs touchés</div>
           </div>
           <div class="stat">
@@ -144,7 +145,7 @@
     </main>
 
     <!-- À propos -->
-    <section id="about" class="section"  data-aos="fade-right">
+    <section id="about" class="section"  data-aos="zoom-in">
       <div class="section-header">
         <h2 class="section-title">Mon Stack Technique</h2>
         <p class="section-sub">
@@ -184,7 +185,7 @@
     </section>
 
     <!-- Projets -->
-    <section id="projects" class="section"  data-aos="fade-right">
+    <section id="projects" class="section"  data-aos="zoom-in">
       <div class="section-header">
         <h2 class="section-title">Aperçu de mes projets</h2>
         <p class="section-sub">
@@ -406,7 +407,7 @@
     </section>
 
     <!-- Certifications -->
-    <section id="certifications" class="section"  data-aos="fade-right">
+    <section id="certifications" class="section"  data-aos="zoom-in>
       <div class="section-header">
         <h2 class="section-title">Certifications</h2>
         <p class="section-sub">
@@ -576,7 +577,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="section"  data-aos="fade-right">
+    <section id="services" class="section"  data-aos="zoom-in">
       <div class="section-header" >
         <h2 class="section-title">Services</h2>
         <p class="section-sub">
@@ -614,6 +615,9 @@
             <li>
               Analyse de données avec Excel, Power BI ou Python (matplotlib).
             </li>
+            <li>
+              Gestion de projet
+            </li>
           </ul>
         </div>
         <div class="svc" >
@@ -635,7 +639,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section"  data-aos="fade-right">
+    <section id="contact" class="section"  data-aos="zoom-in">
       <div class="section-header">
         <h2 class="section-title">Contact</h2>
         <p class="section-sub">Un projet en tête ? Parlons-en.</p>
@@ -764,161 +768,10 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
     <script>
       AOS.init();
     </script>
-    <script>
-      // Smooth scroll + active link
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", (e) => {
-          const target = document.querySelector(link.getAttribute("href"));
-          if (!target) return;
-          e.preventDefault();
-          window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
-          document
-            .querySelectorAll(".nav-links a")
-            .forEach((a) => a.classList.remove("active"));
-          link.classList.add("active");
-        });
-      });
-
-      // Copy portfolio link
-      const copyBtn = document.getElementById("copyPortfolio");
-      const toast = document.getElementById("copyToast");
-      const portfolioURL = "https://maxhgf8-5.github.io/portfolio";
-      copyBtn?.addEventListener("click", async () => {
-        try {
-          await navigator.clipboard.writeText(portfolioURL);
-          toast.style.display = "block";
-          setTimeout(() => (toast.style.display = "none"), 2200);
-        } catch (err) {
-          alert("Impossible de copier. Voici le lien : " + portfolioURL);
-        }
-      });
-
-      // 🔢 Animation des compteurs
-      const counters = document.querySelectorAll(".count");
-      counters.forEach((counter) => {
-        const updateCount = () => {
-          const target = +counter.getAttribute("data-target");
-          const current = +counter.innerText;
-          const increment = target / 50;
-
-          if (current < target) {
-            counter.innerText = Math.ceil(current + increment);
-            setTimeout(updateCount, 30);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-      });
-      // ⏱️ Animation Témoignages
-      let index = 0;
-      const testimonials = document.querySelectorAll(".testimonial");
-
-      function showTestimonial() {
-        testimonials.forEach((t, i) => {
-          t.classList.toggle("active", i === index);
-        });
-        index = (index + 1) % testimonials.length;
-      }
-
-      setInterval(showTestimonial, 4000); //
-
-      // effet machine a ecrire
-      const element = document.getElementById("typewriter");
-      const text = "alut, je suis Magnouréwa,";
-      let i = 0;
-      let isDeleting = false;
-
-      function typeEffect() {
-        if (!isDeleting && i <= text.length) {
-          element.innerHTML = text.substring(0, i);
-          i++;
-        } else if (isDeleting && i >= 0) {
-          element.innerHTML = text.substring(0, i);
-          i--;
-        }
-
-        if (i === text.length) {
-          isDeleting = true;
-          setTimeout(typeEffect, 1200); // pause avant effacement
-          return;
-        }
-
-        if (i === 0 && isDeleting) {
-          isDeleting = false;
-          setTimeout(typeEffect, 1200); // pause avant réécriture
-          return;
-        }
-
-        setTimeout(typeEffect, isDeleting ? 60 : 100); // vitesse différente
-      }
-
-      typeEffect();
-
-      function toggleMenu() {
-        document.getElementById("sidebar").classList.toggle("active");
-      }
-
-      document.querySelectorAll(".project-card").forEach((card, i) => {
-        const close = card.querySelector(".out");
-        const btn = card.querySelector(".toggleProjectBtn");
-        const info = card.querySelector(".project-info");
-        const carousel = card.querySelector(".project-carousel");
-        const image = card.querySelector(".carousel-image");
-        const left = card.querySelector(".chevron.left");
-        const right = card.querySelector(".chevron.right");
-
-        // Tes images pour chaque projet (tableau par carte)
-        const galleries = [
-          [],
-          [],
-          [
-            "image/ecole-1.png",
-            "image/ecole-2.png",
-            "image/ecole-3.png",
-            "image/ecole-4.png",
-            "image/ecole-5.png",
-            "image/ecole-6.png",
-            "image/ecole-7.png",
-            "image/ecole-8.png",
-            "image/ecole-9.png",
-            "image/ecole-10.png",
-            "image/ecole-11.png",
-            "image/ecole-12.png",
-            "image/ecole-13.png",
-          ],
-        ];
-
-        let index = 0;
-
-        btn.addEventListener("click", () => {
-          info.classList.add("hide");
-          carousel.classList.add("show");
-          image.src = galleries[i][index];
-        });
-        close.addEventListener("click", () => {
-          info.classList.remove("hide");
-          carousel.classList.remove("show");
-        });
-        left.addEventListener("click", () => {
-          index = (index - 1 + galleries[i].length) % galleries[i].length;
-          image.src = galleries[i][index];
-        });
-
-        right.addEventListener("click", () => {
-          index = (index + 1) % galleries[i].length;
-          image.src = galleries[i][index];
-        });
-      });
-
-      document.querySelectorAll(".tech-item").forEach((item) => {
-        item.addEventListener("click", () => {
-          item.classList.toggle("active");
-        });
-      });
-    </script>
+    
   </body>
 </html>
