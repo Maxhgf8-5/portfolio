@@ -1177,7 +1177,7 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    left: 0;
+    /* left: 0; */
     z-index: 1000;
     backdrop-filter: saturate(1.2) blur(10px);
     background: linear-gradient(180deg,
